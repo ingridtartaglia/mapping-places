@@ -1,0 +1,51 @@
+body {
+    background-color: #0B486B !important;
+    color: white !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+@media screen and (min-width: 768px) {
+    body { font-size: 1.75em !important; }
+    h1 { padding: 2em 0 }
+}
+@media screen and (max-width: 768px) {
+    h1 { padding: 1em 0 }
+    .menu-options { display: flex; justify-content: center; }
+    #map { margin: 0 2em; }
+}
+
+/* form */
+#search-city-form { margin: 0 auto; padding-bottom: 1em;}
+.input-group { width: 50% !important; }
+.input-group > .form-control {
+    border-radius: 0;
+}
+.form-control {
+    border: 1px solid white !important;
+    color: black !important;
+}
+.btn {
+    padding: 9px 12px !important;
+    border-radius: 0 !important;
+}
+.btn-default {
+    border-color: white !important;
+    border-left-color: #ccc;
+}
+
+/* map */
+.map-content { padding: 3em 0; }
+
+.menu-options a { color: white !important; }
+.menu-options a:hover,.menu-options a:focus {
+    background-color: #A8DBA8 !important;
+    border-radius: 0;
+}
+@media screen and (max-width: 460px) {
+    .menu-options a {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+}
+
+#map { height: 50%; }

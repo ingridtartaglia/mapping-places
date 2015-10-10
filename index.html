@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>#8 - Mapping Places</title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Mapping Places</h1>
+                <div class="input-group" id="search-city-form">
+                    <input type="text" class="form-control search-city-input" placeholder="Search for a city name">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default search-city-button" type="button">
+                            <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="row map-content">
+                <div class="col-xs-12 col-sm-3 menu-placeholder">
+                    <ul class="nav nav-pills nav-stacked hidden-xs menu-options" style="display:none;">
+                        <li class="location-type" role="presentation" id="museum"><a href="#">Museums</a></li>
+                        <li class="location-type" role="presentation" id="restaurant"><a href="#">Restaurants</a></li>
+                        <li class="location-type" role="presentation" id="shopping_mall"><a href="#">Shoppings</a></li>
+                        <li class="location-type" role="presentation" id="night_club"><a href="#">Clubs</a></li>
+                        <li class="location-type" role="presentation" id="bar"><a href="#">Bars</a></li>
+                    </ul>
+                    <ul class="nav nav-pills hidden-sm hidden-md hidden-lg menu-options" style="display:none;">
+                        <li class="location-type" role="presentation" id="museum"><a href="#">Museums</a></li>
+                        <li class="location-type" role="presentation" id="restaurant"><a href="#">Restaurants</a></li>
+                        <li class="location-type" role="presentation" id="shopping_mall"><a href="#">Shoppings</a></li>
+                        <li class="location-type" role="presentation" id="night_club"><a href="#">Clubs</a></li>
+                        <li class="location-type" role="presentation" id="bar"><a href="#">Bars</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                        <div id="map"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-hU7soKe_i8Bj0cKhPY-41g7s-l4EaG0&signed_in=true&libraries=places&callback=init" async defer></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
